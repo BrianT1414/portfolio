@@ -4,7 +4,7 @@ on: pull_request
 
 jobs:
   verify-code-standards:
-    runs-on: node:20-alpine
+    runs-on: node:20
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
@@ -13,7 +13,7 @@ jobs:
         run: npx prettier --check ./src
 
   verify-build:
-    runs-on: node:20-alpine
+    runs-on: node:20
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
