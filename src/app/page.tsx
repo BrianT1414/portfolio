@@ -1,8 +1,9 @@
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
+import styles from "./index.module.css";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className={styles.container}>
       <div>
         <div>
           <Typography variant="h1">Brian Thompson</Typography>
@@ -11,44 +12,32 @@ export default function Home() {
           <Typography variant="h3">Software Developer</Typography>
         </div>
       </div>
-      <div className="max-w-prose">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-        occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.
+      <div className={styles.introduction_container}>
+        <Typography className={styles.introduction}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </Typography>
       </div>
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <Typography
-          component="a"
-          href="/"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        >
-          Skills
-        </Typography>
-        <Typography
-          component="a"
-          href="/"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        >
-          Project Highlights
-        </Typography>
-        <Typography
-          component="a"
-          href="/"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        >
-          Work History
-        </Typography>
-        <Typography
-          component="a"
-          href="/"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-        >
-          Resume
-        </Typography>
+      <div className={styles.actions_container}>
+        <div className={styles.actions}>
+          <Button color="success" component="a" href="/">
+            Skills
+          </Button>
+          <Button color="success" component="a" href="/values">
+            Values
+          </Button>
+          <Button color="success" component="a" href="/">
+            Project Highlights
+          </Button>
+          <Button color="success" component="a" href="/">
+            Work History
+          </Button>
+        </div>
       </div>
     </main>
   );
