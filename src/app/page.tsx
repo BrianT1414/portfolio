@@ -1,15 +1,16 @@
 import { Button, Typography } from "@mui/material";
 import styles from "./index.module.css";
+import { name, navMap, title } from "@/constants";
 
 export default function Home() {
   return (
     <main className={styles.container}>
       <div>
         <div>
-          <Typography variant="h1">Brian Thompson</Typography>
+          <Typography variant="h1">{name}</Typography>
         </div>
         <div>
-          <Typography variant="h3">Software Developer</Typography>
+          <Typography variant="h3">{title}</Typography>
         </div>
       </div>
       <div className={styles.introduction_container}>
@@ -25,18 +26,11 @@ export default function Home() {
       </div>
       <div className={styles.actions_container}>
         <div className={styles.actions}>
-          <Button color="success" component="a" href="/">
-            Skills
-          </Button>
-          <Button color="success" component="a" href="/values">
-            Values
-          </Button>
-          <Button color="success" component="a" href="/">
-            Project Highlights
-          </Button>
-          <Button color="success" component="a" href="/">
-            Work History
-          </Button>
+          {Object.entries(navMap).map(([name, link]) => (
+            <Button key={name} color="success" component="a" href={link}>
+              {name}
+            </Button>
+          ))}
         </div>
       </div>
     </main>
