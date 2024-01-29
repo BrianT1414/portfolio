@@ -6,6 +6,7 @@
 
 .title_container {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 .actions_container {
@@ -20,4 +21,14 @@
   display: flex;
   justify-content: space-between;
   flex-grow: 1;
+}
+
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.template_title {
+  text-align: center;
+  margin: 30px;
 }
