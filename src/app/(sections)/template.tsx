@@ -16,7 +16,7 @@ export default function Template(props: Props) {
       <div>
         <Typography>{props.description}</Typography>
       </div>
-      <div>{props.children}</div>
+      <div className={styles.template_content}>{props.children}</div>
     </div>
   );
 }
