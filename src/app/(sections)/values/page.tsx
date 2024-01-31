@@ -1,7 +1,15 @@
 import Template from "../template";
 
-const description =
-  'Rather than provide a list of generic professional values such as "integrity", "accountability", and "respect" (all of which I do value), my goal is to provide a list of specific traits that are very important to me. This list is not limited to character traits, but also extends into the types and methods of work I value.';
+const description = (
+  <>
+    There are professional values that every person should hold such as
+    &quot;integrity&quot;, &quot;respect&quot;, and &quot;reliability&quot;.
+    Unfortunately, they tend to be easy to write but hard to prove without
+    first-hand experience with a person. Therefore my goal here is to list and
+    describe my professional values in a more specific and meaningful way. These
+    are traits that I value about myself, my work, team, or work environment.
+  </>
+);
 
 export default function Values() {
   return (
@@ -13,7 +21,6 @@ export default function Values() {
       </ul>
       <ul>
         <li>Developer Experience</li>
-        <li>Automation</li>
         <li>Continuous Improvement</li>
         <li>Pragmatism</li>
         <li>Agile</li>

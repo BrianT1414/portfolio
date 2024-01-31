@@ -4,7 +4,7 @@ import styles from "./sections.module.css";
 
 interface Props extends React.PropsWithChildren {
   title: string;
-  description: string;
+  description: React.ReactNode;
 }
 
 export default function Template(props: Props) {
