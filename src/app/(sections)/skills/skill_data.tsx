@@ -51,25 +51,29 @@ export const skills: Skill[] = [
           years that what I get the most satisfaction from is making React
           enjoyable for other developers. This comes in multiple forms, the
           primary of which are:
-          <ul>
-            <li>
+        </Typography>
+        <ul>
+          <li>
+            <Typography>
               <b>Teaching</b> - you are more likely to enjoy working with a
               technology that you understand better. This almost always comes in
               the form of normal work collaboration, not dedicated teaching
               time. Every day problems and bugs that come up are opportunities
               to share what I&apos;ve learned with others in a way that they can
               see for themselves in real-time.
-            </li>
-            <li>
+            </Typography>
+          </li>
+          <li>
+            <Typography>
               <b>Building Tools</b> - creating custom hooks or reusable
               components that make feature development faster, consistent, and
               reliable. Improving my own pain-points is often a primary driver,
               but getting to multiply that benefit by also eliminating
               pain-points for everyone on the team/company is what really makes
               me enjoy my work.
-            </li>
-          </ul>
-        </Typography>
+            </Typography>
+          </li>
+        </ul>
       </>
     ),
   },
@@ -345,34 +349,33 @@ export const skills: Skill[] = [
               expensive to companies. I have solved this problem in two ways -
               both resulting in developer enviroment setup times of a few
               minutes.
-              <ol>
-                <li>
-                  <Typography>
-                    Use a standard docker image and include the set of commands
-                    to get started in the project&apos;s README. Example:{" "}
-                    <Code>
-                      docker run --rm -v $(pwd):/app -w /app node:18-alpine npm
-                      i
-                    </Code>{" "}
-                    then{" "}
-                    <Code>
-                      docker run -p 3001:3000 -v $(pwd):/app -w /app
-                      --name=app-name node:18-alpine npm run dev
-                    </Code>
-                  </Typography>
-                </li>
-                <li>
-                  <Typography>
-                    VS Code Dev Containers. An integration with VS Code that
-                    takes the development enviroment defined in the project,
-                    runs it as a docker container, and lets you start developing
-                    without thinking about server requirements. This takes the
-                    potentially days long process and makes it a single button
-                    click: &quot;Open in Dev Container&quot;.
-                  </Typography>
-                </li>
-              </ol>
             </Typography>
+            <ol>
+              <li>
+                <Typography>
+                  Use a standard docker image and include the set of commands to
+                  get started in the project&apos;s README. Example:{" "}
+                  <Code>
+                    docker run --rm -v $(pwd):/app -w /app node:18-alpine npm i
+                  </Code>{" "}
+                  then{" "}
+                  <Code>
+                    docker run -p 3001:3000 -v $(pwd):/app -w /app
+                    --name=app-name node:18-alpine npm run dev
+                  </Code>
+                </Typography>
+              </li>
+              <li>
+                <Typography>
+                  VS Code Dev Containers. An integration with VS Code that takes
+                  the development enviroment defined in the project, runs it as
+                  a docker container, and lets you start developing without
+                  thinking about server requirements. This takes the potentially
+                  days long process and makes it a single button click:
+                  &quot;Open in Dev Container&quot;.
+                </Typography>
+              </li>
+            </ol>
           </li>
         </ul>
       </>

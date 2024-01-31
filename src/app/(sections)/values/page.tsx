@@ -1,4 +1,6 @@
+import Value from "@/components/Value";
 import Template from "../template";
+import { values } from "./value_data";
 
 const description = (
   <>
@@ -14,6 +16,11 @@ const description = (
 export default function Values() {
   return (
     <Template title="Professional Values" description={description}>
+      <div style={{ maxWidth: 600, margin: "auto", marginBottom: 30 }}>
+        {values.map((value) => (
+          <Value key={value.name} name={value.name} body={value.body} />
+        ))}
+      </div>
       <ul>
         <li>Quality</li>
         <li>Ownership</li>

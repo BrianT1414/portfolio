@@ -13,7 +13,7 @@ export default function Template(props: Props) {
       <div className={styles.template_title}>
         <Typography variant="h2">{props.title}</Typography>
       </div>
-      <div>
+      <div style={{ maxWidth: 1000, margin: "auto" }}>
         <Typography>{props.description}</Typography>
       </div>
       <div className={styles.template_content}>{props.children}</div>
