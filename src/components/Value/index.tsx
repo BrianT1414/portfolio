@@ -8,11 +8,10 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 interface Props {
   name: string;
-  years: number;
   body: React.ReactNode;
 }
 
-export default function Skill(props: Props) {
+export default function Value(props: Props) {
   const [open, setOpen] = React.useState(false);
 
   return (
@@ -26,9 +25,6 @@ export default function Skill(props: Props) {
           }}
         >
           <Typography sx={{ flexShrink: 0 }}>{props.name}</Typography>
-          <Typography sx={{ color: "text.secondary" }}>
-            {props.years} {props.years == 1 ? "year" : "years"}
-          </Typography>
         </div>
       </AccordionSummary>
       <AccordionDetails>{props.body}</AccordionDetails>
