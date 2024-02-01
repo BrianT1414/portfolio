@@ -5,5 +5,5 @@ export const navMap = {
   skills: "/skills",
   values: "/values",
   projects: "/",
-  "work history": "/",
+  "work history": "/work-history",
 };
