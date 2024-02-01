@@ -57,20 +57,20 @@ export const skills: Skill[] = [
             <Typography>
               <b>Teaching</b> - you are more likely to enjoy working with a
               technology that you understand better. This almost always comes in
-              the form of normal work collaboration, not dedicated teaching
-              time. Every day problems and bugs that come up are opportunities
-              to share what I&apos;ve learned with others in a way that they can
-              see for themselves in real-time.
+              the form of normal work <Link>collaboration</Link>, not dedicated
+              teaching time. Every day problems and bugs that come up are
+              opportunities to share what I&apos;ve learned with others in a way
+              that they can see for themselves in real-time.
             </Typography>
           </li>
           <li>
             <Typography>
               <b>Building Tools</b> - creating custom hooks or reusable
-              components that make feature development faster, consistent, and
-              reliable. Improving my own pain-points is often a primary driver,
-              but getting to multiply that benefit by also eliminating
-              pain-points for everyone on the team/company is what really makes
-              me enjoy my work.
+              components and utilities that make feature development faster,
+              consistent, and reliable. Improving my own pain-points is often a
+              primary driver, but getting to multiply that benefit by also
+              eliminating pain-points for everyone on the team/company is what
+              really makes me enjoy my work.
             </Typography>
           </li>
         </ul>
@@ -90,14 +90,15 @@ export const skills: Skill[] = [
         <Typography paragraph>
           Some particular JavaScript areas that I have learned through React are
           the <Code>this</Code> keyword (less useful now that hooks have taken
-          over), array methods, and object equality and mutation. I began
-          developing with JavaScript pre-ES6, so I also have a good knowledge of
-          newer features, the pain-points they alleviate, and transpilation for
-          browser compatibilty.
+          over), array methods, equality operations, and object equality and
+          mutation. I began developing with JavaScript pre-ES6, so I also have a
+          good knowledge of newer features, the pain-points they alleviate, and
+          transpilation for browser compatibilty.
         </Typography>
         <Typography paragraph>
           This solid foundational knowledge of JavaScript makes me confident
-          that I can quickly learn any frontend framework.
+          that I can quickly learn any frontend framework such as Vue or
+          Angular.
         </Typography>
       </>
     ),
@@ -115,12 +116,12 @@ export const skills: Skill[] = [
           cross my radar for a year or two. After hearing about it vaguely and
           understanding it was becoming somewhat popular, I began researching it
           myself. Often times I hear of popular technologies and can&apos;t
-          understand the purpose they serve right away (ie docker). At that
-          time, the only two languages I knew were PHP and JavaScript, so types
-          were a foreign concept to me. An opportunity came up at work to build
-          a new small React app, so I seized the chance to try out TypeScript
-          and see for myself why it might be useful - I&apos;ve never looked
-          back.
+          understand the purpose they serve right away (ie <Link>docker</Link>).
+          At that time, the only two languages I knew were PHP and JavaScript,
+          so types were a foreign concept to me. An opportunity came up at work
+          to build a new small React app, so I seized the chance to try out
+          TypeScript and see for myself why it might be useful - I&apos;ve never
+          looked back.
         </Typography>
         <Typography paragraph>
           TypeScript can be polarizing. I have encountered more developers that
@@ -135,7 +136,7 @@ export const skills: Skill[] = [
         <ul>
           <li>
             <Typography>
-              <b>Shortened feedback loop</b> - Get feedback on 90% of errors
+              <b>Shortened feedback loop</b> - get feedback on 90% of errors
               before you even get to the browser. This can easily add up to
               multiple hours saved per week, and improves developer experience
               (no one likes waiting for compile/refresh just to be told they
@@ -170,7 +171,7 @@ export const skills: Skill[] = [
         <Typography paragraph>
           I discovered Next.JS in search of a good way to do server-side
           rendering, and it delivered so much more. I now use Next.JS on any SPA
-          project that I can (including this website!).
+          project that I can (including <Link>this website</Link>!).
         </Typography>
         <Typography paragraph>
           Website performance is important in any circumstance, but when
@@ -181,7 +182,8 @@ export const skills: Skill[] = [
           still left users with a less-than-ideal experience. The solution?
           Server-side rendering. Next.JS delivers this feature automatically,
           and provides many other benefits such as static generation,
-          fast-refresh, built-in routing, and image optimization.
+          fast-refresh, built-in routing, and image optimization that make both
+          the developer and user experience wonderful.
         </Typography>
         <Typography paragraph>
           My experience with Next.JS includes migrating the entire React portion
@@ -213,8 +215,8 @@ export const skills: Skill[] = [
           only use Blade templates for email views. I have worked on Laravel
           projects ranging in size from 3 endpoints (for a central company
           authorization service) to hundreds of endpoints. I have used every
-          feature of the framework including commands (usually ran by the
-          scheduler), model observers, and events.
+          feature of the framework including some of the less popular ones like
+          commands (usually ran by the scheduler), model observers, and events.
         </Typography>
         <Typography paragraph>
           Laravel is a joy to work with. As I&apos;ve recently moved on
@@ -228,12 +230,14 @@ export const skills: Skill[] = [
           I&apos;ve used that makes it really 100% practical. When using Laravel
           I voluntarily opt-in to TDD about 80% of the time. I usually end up
           with about 90% test coverage, and have found that it&apos;s at about
-          this percentage that the ROI for testing starts to plummet. This
-          ability to write meaninful tests with significant coverage has some
-          really powerful implications: framework, language, and database
-          upgrades are usually {">"}10 minute tasks. Often times, its as simple
-          as changing the version in a dockerfile or composer.json and running
-          the test suite against it. This lets me keep all Laravel apps
+          this percentage that the ROI for testing starts to plummet.
+        </Typography>
+        <Typography paragraph>
+          The ability to write meaninful tests with significant coverage has
+          some really powerful implications: framework, language, and database
+          upgrades are usually {"<"}10 minute tasks. Often times, it&apos;s as
+          simple as changing the version in a dockerfile or composer.json and
+          running the test suite against it. This lets me keep all Laravel apps
           up-to-date, even ones that don&apos;t normally receive attention and
           are at risk of getting left on old versions until they become a
           problem and are now years out-of-date.
