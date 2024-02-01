@@ -4,6 +4,6 @@ export const title = "Software Developer";
 export const navMap = {
   skills: "/skills",
   values: "/values",
-  projects: "/",
+  projects: "/projects",
   "work history": "/work-history",
 };
