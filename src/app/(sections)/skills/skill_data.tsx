@@ -93,9 +93,9 @@ export const skills: Skill[] = [
         <Typography paragraph>
           Some particular JavaScript areas that I have learned through React are
           the <Code>this</Code> keyword (less useful now that hooks have taken
-          over), array methods, equality operations, and object equality and
-          mutation. I began developing with JavaScript pre-ES6, so I also have a
-          good knowledge of newer features, the pain-points they alleviate, and
+          over), array methods, equality operations, and object mutation. I
+          began developing with JavaScript pre-ES6, so I also have a good
+          knowledge of newer features, the pain-points they alleviate, and
           transpilation for browser compatibilty.
         </Typography>
         <Typography paragraph>
@@ -233,10 +233,10 @@ export const skills: Skill[] = [
         <Typography paragraph>
           One of my favorite features of Laravel is it&apos;s testing support. I
           am a believer in the theory of TDD, but Laravel is the only framework
-          I&apos;ve used that makes it really 100% practical. When using Laravel
-          I voluntarily opt-in to TDD about 80% of the time. I usually end up
-          with about 90% test coverage, and have found that it&apos;s at about
-          this percentage that the ROI for testing starts to plummet.
+          I&apos;ve used that makes it practical. When using Laravel I
+          voluntarily opt-in to TDD about 80% of the time. I usually end up with
+          about 90% test coverage, and have found that it&apos;s at about this
+          percentage that the ROI for testing starts to plummet.
         </Typography>
         <Typography paragraph>
           The ability to write meaninful tests with significant coverage has

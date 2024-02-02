@@ -10,13 +10,14 @@ interface Props {
   name: string;
   years: number;
   body: React.ReactNode;
+  id: string;
 }
 
 export default function SkillAccordian(props: Props) {
   const [open, setOpen] = React.useState(false);
 
   return (
-    <Accordion expanded={open} onChange={() => setOpen(!open)}>
+    <Accordion id={props.id} expanded={open} onChange={() => setOpen(!open)}>
       <AccordionSummary expandIcon={<ExpandMoreIcon />}>
         <div
           style={{
