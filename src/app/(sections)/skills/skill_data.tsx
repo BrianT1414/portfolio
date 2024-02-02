@@ -5,13 +5,15 @@ import React from "react";
 interface Skill {
   name: string;
   years: number;
-  body?: React.ReactNode;
+  logo: string;
+  body: React.ReactNode;
 }
 
 export const skills: Skill[] = [
   {
     name: "React",
-    years: 6,
+    years: 2017,
+    logo: "/react_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -79,7 +81,8 @@ export const skills: Skill[] = [
   },
   {
     name: "JavaScript",
-    years: 6,
+    years: 2017,
+    logo: "/js_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -105,7 +108,8 @@ export const skills: Skill[] = [
   },
   {
     name: "TypeScript",
-    years: 5,
+    years: 2019,
+    logo: "/ts_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -165,7 +169,8 @@ export const skills: Skill[] = [
   },
   {
     name: "Next.JS",
-    years: 4,
+    years: 2019,
+    logo: "/nextjs_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -198,7 +203,8 @@ export const skills: Skill[] = [
   },
   {
     name: "Laravel",
-    years: 6,
+    years: 2017,
+    logo: "/laravel_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -247,7 +253,8 @@ export const skills: Skill[] = [
   },
   {
     name: "PHP",
-    years: 6,
+    years: 2017,
+    logo: "/php_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -292,7 +299,8 @@ export const skills: Skill[] = [
   },
   {
     name: "Docker",
-    years: 4,
+    years: 2020,
+    logo: "/docker_logo.svg",
     body: (
       <>
         <Typography paragraph>
@@ -387,7 +395,8 @@ export const skills: Skill[] = [
   },
   {
     name: "GitLab CI",
-    years: 3,
+    years: 2020,
+    logo: "/gitlab_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -430,7 +439,8 @@ export const skills: Skill[] = [
   },
   {
     name: "GitHub Actions",
-    years: 2,
+    years: 2022,
+    logo: "/github_actions_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -459,7 +469,8 @@ export const skills: Skill[] = [
   },
   {
     name: "Redux",
-    years: 6,
+    years: 2017,
+    logo: "/redux_logo.svg",
     body: (
       <>
         <Typography paragraph>
@@ -535,7 +546,8 @@ export const skills: Skill[] = [
   },
   {
     name: "MySQL",
-    years: 7,
+    years: 2017,
+    logo: "/mysql_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -556,7 +568,8 @@ export const skills: Skill[] = [
   },
   {
     name: "Postgres",
-    years: 2,
+    years: 2022,
+    logo: "/postgres_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -571,7 +584,8 @@ export const skills: Skill[] = [
   },
   {
     name: "Node",
-    years: 5,
+    years: 2019,
+    logo: "/node_logo.png",
     body: (
       <>
         <Typography paragraph>
@@ -614,7 +628,8 @@ export const skills: Skill[] = [
   },
   {
     name: "HTML/CSS",
-    years: 8,
+    years: 2016,
+    logo: "/html_css_logo.jpg",
     body: (
       <>
         <Typography paragraph>
@@ -637,7 +652,9 @@ export const skills: Skill[] = [
   },
   {
     name: "Java/Spring",
-    years: 1,
+    years: 2023,
+
+    logo: "/spring_logo.png",
     body: (
       <>
         <Typography paragraph>

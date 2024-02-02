@@ -1,6 +1,13 @@
-import Skill from "@/components/Skill";
+"use client";
+import React from "react";
+import SkillAccordian from "@/components/SkillAccordian";
 import Template from "../template";
 import { skills } from "./skill_data";
+import SkillCard from "@/components/SkillCard";
+import ViewListIcon from "@mui/icons-material/ViewList";
+import ViewModuleIcon from "@mui/icons-material/ViewModule";
+import { Grid, ToggleButton, ToggleButtonGroup } from "@mui/material";
+import yearsFrom from "@/utils/yearsFrom";
 
 const description = (
   <>
@@ -13,17 +20,59 @@ const description = (
 );
 
 export default function Skills() {
+  const [view, setView] = React.useState("grid");
+
+  const handleChange = (
+    event: React.MouseEvent<HTMLElement>,
+    nextView: string,
+  ) => {
+    setView(nextView);
+  };
+
   return (
     <Template title="Skills" description={description}>
-      <div style={{ maxWidth: 600, margin: "auto", marginBottom: 30 }}>
-        {skills.map((skill) => (
-          <Skill
-            key={skill.name}
-            name={skill.name}
-            years={skill.years}
-            body={skill.body}
-          />
-        ))}
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <ToggleButtonGroup value={view} exclusive onChange={handleChange}>
+          <ToggleButton value="grid" aria-label="grid">
+            <ViewModuleIcon />
+          </ToggleButton>
+          <ToggleButton value="list" aria-label="list">
+            <ViewListIcon />
+          </ToggleButton>
+        </ToggleButtonGroup>
+      </div>
+      <div
+        style={{
+          maxWidth: view == "grid" ? 800 : 600,
+          margin: "auto",
+          marginBottom: 30,
+        }}
+      >
+        {view == "grid" ? (
+          <Grid container spacing={2} rowSpacing={2}>
+            {skills.map((skill) => (
+              <Grid key={skill.name} item>
+                <SkillCard
+                  name={skill.name}
+                  years={yearsFrom(skill.years)}
+                  body={skill.body}
+                  logo_src={skill.logo}
+                />
+              </Grid>
+            ))}
+          </Grid>
+        ) : (
+          <>
+            {skills.map((skill) => (
+              <SkillAccordian
+                key={skill.name}
+                name={skill.name}
+                years={yearsFrom(skill.years)}
+                body={skill.body}
+              />
+            ))}
+          </>
+        )}
       </div>
     </Template>
   );

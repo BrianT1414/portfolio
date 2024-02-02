@@ -12,7 +12,7 @@ interface Props {
   body: React.ReactNode;
 }
 
-export default function Skill(props: Props) {
+export default function SkillAccordian(props: Props) {
   const [open, setOpen] = React.useState(false);
 
   return (
