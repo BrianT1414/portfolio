@@ -11,11 +11,11 @@ import yearsFrom from "@/utils/yearsFrom";
 
 const description = (
   <>
-    Below I have provided a list of specific skills I have aquired in my career.
-    A simple list of skills and years of experience only provides the most
-    cursory view of proficiency; so I have also included expandable sections
-    where I describe my experience, anecdotes, and opinions in an attempt to
-    demonstrate my actual competency and experience in each area.
+    On this page I have provided a list of specific skills I have aquired in my
+    career. A simple list of skills and years of experience doesn&apos;t
+    actually prove very much; so I have also included expandable sections where
+    I describe my experience in a mini-blog post style to show a fuller picture
+    of my expertise in each area.
   </>
 );
 
@@ -51,7 +51,7 @@ export default function Skills() {
         {view == "grid" ? (
           <Grid container spacing={2} rowSpacing={2}>
             {skills.map((skill) => (
-              <Grid key={skill.name} item>
+              <Grid key={skill.name} id={skill.name} item>
                 <SkillCard
                   name={skill.name}
                   years={yearsFrom(skill.years)}
@@ -66,6 +66,7 @@ export default function Skills() {
             {skills.map((skill) => (
               <SkillAccordian
                 key={skill.name}
+                id={skill.name}
                 name={skill.name}
                 years={yearsFrom(skill.years)}
                 body={skill.body}

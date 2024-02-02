@@ -13,12 +13,12 @@ const description = (
   <>
     I currently only have one public project to show off - this website. I have
     the problem of picking too many hobbies to fill up my time - woodworking,
-    mountain biking, golf, or a good Nintendo game. On the occasion that
-    I&apos;m in a programming-is-life kind of mood, I tend to focus on learning
-    rather than building - reading books, watching conference presentations,
-    etc. I built this website for the sole purpose of filling this gap; to show
-    at some small level that the experience I talk about is more than just words
-    on a resume.
+    mountain biking, golf, and many many more. On the occasion that I&apos;m in
+    a programming-is-life kind of mood, I tend to focus on learning rather than
+    building - reading books, watching conference presentations, or similar. I
+    built this website for the sole purpose of filling this gap; to show at some
+    small level that the experience I talk about is more than just words on a
+    resume.
   </>
 );
 
