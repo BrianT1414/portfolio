@@ -24,7 +24,7 @@ export const skills: Skill[] = [
         </Typography>
         <Typography paragraph>
           I&apos;ve used React on dozens of projects including single page
-          applications using React Router and Next.JS, as well as several
+          applications using React Router or Next.JS, as well as several
           internal component libraries. I am proficient in advanced concepts
           such as context, memoization, and portaling. Most importantly, I have
           a deep understanding of React&apos;s component lifecycle. This deep
@@ -231,8 +231,8 @@ export const skills: Skill[] = [
           need, is documented wonderfully, and has a concise, expressive API.
         </Typography>
         <Typography paragraph>
-          One of my favorite features of Laravel is it&apos;s testing support. I
-          am a believer in the theory of TDD, but Laravel is the only framework
+          One of my favorite features of Laravel is its testing support. I am a
+          believer in the theory of TDD, but Laravel is the only framework
           I&apos;ve used that makes it practical. When using Laravel I
           voluntarily opt-in to TDD about 80% of the time. I usually end up with
           about 90% test coverage, and have found that it&apos;s at about this
@@ -485,14 +485,13 @@ export const skills: Skill[] = [
         </Typography>
         <Typography paragraph>
           <b>Is Redux still Relevant?</b> - The popularity of Redux has suffered
-          some severe whiplash since it&apos;s release. Redux used to be nearly
-          synonymous with React; they were almost always used together.
-          It&apos;s popularity was certainly influnced by Dan Abromov (creator
-          of Redux and React maintainer) and blog posts about patterns and best
-          practices (including Ducks, and Container/Presenter). Abromov himself
-          recognized that Redux&apos;s popularity had swung too far to the
-          extreme, where people were using it even when it didn&apos;t really
-          suit them (
+          some severe whiplash since its release. Redux used to be nearly
+          synonymous with React; they were almost always used together. Its
+          popularity was certainly influnced by Dan Abromov (creator of Redux
+          and React maintainer) and blog posts about patterns and best practices
+          (including Ducks, and Container/Presenter). Abromov himself recognized
+          that Redux&apos;s popularity had swung too far to the extreme, where
+          people were using it even when it didn&apos;t really suit them (
           <Link href="https://medium.com/@dan_abramov/you-might-not-need-redux-be46360cf367">
             blog post here
           </Link>
@@ -511,8 +510,8 @@ export const skills: Skill[] = [
           React&apos;s native context API needs to be clarified as it has been
           causing serious misconceptions amoung newer React developers. The
           problem with labeling this discussion &quot;Redux vs Context&quot; is
-          that comparing Redux to Context is like comparing a hammer to a drill
-          - they are two tools that serve completely different purposes.
+          that comparing Redux to Context is like comparing a shovel to a rake -
+          they are two tools that serve completely different purposes.
         </Typography>
         <Typography paragraph>
           The origin of this debate is really about how state, specifically
@@ -527,8 +526,8 @@ export const skills: Skill[] = [
         </Typography>
         <Typography paragraph>
           Context plus state (<Code>useState</Code> or <Code>useReducer</Code>)
-          now accomplishes the same thing as Redux - is it better? Maybe. Its
-          better if your state is small, or can be broken into small
+          now accomplishes the same thing as Redux - is it better? Maybe.
+          It&apos;s better if your state is small, or can be broken into small
           self-contained groups that can each have their own Context provider.
           This opens the door for custom hooks, managing side-effects of global
           state changes with <Code>useEffect</Code> (harder to do in Redux), and
@@ -600,18 +599,18 @@ export const skills: Skill[] = [
           for the server. However, I commonly hear people referring to Node as
           if it were running in a browser or almost synonymous with modern
           JavaScript. I believe this misconception comes from using Node as a
-          development tool, and not understanding where it&apos;s
-          responsibilities terminate in the process.
+          development tool, and not understanding where its responsibilities
+          terminate in the process.
         </Typography>
         <Typography paragraph>
           Loosely, you could say I have used Node since I started using React.
-          Node provides npm, and the runtime for it&apos;s commands and
-          processes. For a static React app, this is simply installing
-          dependencies and building the output files through webpack. Slightly
-          less loosely, you could consider developing from &quot;Create React
-          App&quot; (CRA) using Node, since it goes one step further and runs a
-          Node server to handle hot module replacement (HMR). However, neither
-          of these scenarios really prove much knowledge of working with Node.
+          Node provides npm, and the runtime for its commands and processes. For
+          a static React app, this is simply installing dependencies and
+          building the output files through webpack. Slightly less loosely, you
+          could consider developing from &quot;Create React App&quot; (CRA)
+          using Node, since it goes one step further and runs a Node server to
+          handle hot module replacement (HMR). However, neither of these
+          scenarios really prove much knowledge of working with Node.
         </Typography>
         <Typography paragraph>
           Situations that I personally consider to be &quot;working with
