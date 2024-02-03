@@ -26,8 +26,8 @@ export default function Home() {
       </div>
       <div className={styles.actions_container}>
         <div className={styles.actions}>
-          {Object.entries(navMap).map(([name, link]) => (
-            <Button key={name} color="success" component="a" href={link}>
+          {Object.entries(navMap).map(([name, path]) => (
+            <Button key={name} component="a" href={path}>
               {name}
             </Button>
           ))}

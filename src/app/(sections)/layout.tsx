@@ -16,11 +16,11 @@ export default function SectionsLayout({
         </div>
         <div className={styles.actions_container}>
           <div className={styles.actions}>
-            <Button color="success" component="a" href="/">
+            <Button component="a" href="/">
               Home
             </Button>
-            {Object.entries(navMap).map(([name, link]) => (
-              <Button key={name} color="success" component="a" href={link}>
+            {Object.entries(navMap).map(([name, item]) => (
+              <Button key={name} component="a" href={item.path}>
                 {name}
               </Button>
             ))}
