@@ -7,6 +7,8 @@
 .title_container {
   width: 100%;
   margin-bottom: 30px;
+  text-decoration: none;
+  color: black;
 }
 
 .actions_container {
@@ -34,5 +36,18 @@
 }
 
 .template_content {
-  margin-top: 30px;
+  margin: 30px;
+}
+
+.mobile_actions {
+  display: none;
+}
+
+@media (max-width: 1080px) {
+  .actions_container {
+    display: none;
+  }
+  .mobile_actions {
+    display: block;
+  }
 }

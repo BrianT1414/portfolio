@@ -1,11 +1,13 @@
 "use client";
-import { teal } from "@mui/material/colors";
-import { createTheme } from "@mui/material/styles";
+import { indigo } from "@mui/material/colors";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 
-const theme = createTheme({
-  palette: {
-    primary: teal,
-  },
-});
+const theme = responsiveFontSizes(
+  createTheme({
+    palette: {
+      primary: indigo,
+    },
+  }),
+);
 
 export default theme;

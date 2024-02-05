@@ -55,6 +55,7 @@ export default function WorkHistory() {
                 marginLeft: 4,
               }}
             >
+              <Typography variant="h6">Client: Best Buy</Typography>
               <ul>
                 <li>
                   <Typography>
