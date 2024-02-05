@@ -11,8 +11,8 @@ import yearsFrom from "@/utils/yearsFrom";
 
 const description = (
   <>
-    On this page I have provided a list of specific skills I have aquired in my
-    career. A simple list of skills and years of experience doesn&apos;t
+    On this page I have provided a list of specific technologies I have learned
+    in my career. A simple list of skills and years of experience doesn&apos;t
     actually prove very much; so I have also included expandable sections where
     I describe my experience in a mini-blog post style to show a fuller picture
     of my expertise in each area.
@@ -31,7 +31,13 @@ export default function Skills() {
 
   return (
     <Template title="Skills" description={description}>
-      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          marginBottom: 20,
+        }}
+      >
         <ToggleButtonGroup value={view} exclusive onChange={handleChange}>
           <ToggleButton value="grid" aria-label="grid">
             <ViewModuleIcon />

@@ -2,8 +2,8 @@ export const name = "Brian Thompson";
 export const title = "Software Developer";
 
 export const navMap = {
-  skills: "/skills",
-  values: "/values",
-  projects: "/projects",
-  "work history": "/work-history",
+  Skills: "/skills",
+  Values: "/values",
+  Projects: "/projects",
+  "Work History": "/work-history",
 };
