@@ -59,10 +59,10 @@ export const skills: Skill[] = [
             <Typography>
               <b>Teaching</b> - you are more likely to enjoy working with a
               technology that you understand better. This almost always comes in
-              the form of normal work <Link>collaboration</Link>, not dedicated
-              teaching time. Every day problems and bugs that come up are
-              opportunities to share what I&apos;ve learned with others in a way
-              that they can see for themselves in real-time.
+              the form of normal work collaboration, not dedicated teaching
+              time. Every day problems and bugs that come up are opportunities
+              to share what I&apos;ve learned with others in a way that they can
+              see for themselves in real-time.
             </Typography>
           </li>
           <li>
@@ -120,12 +120,12 @@ export const skills: Skill[] = [
           cross my radar for a year or two. After hearing about it vaguely and
           understanding it was becoming somewhat popular, I began researching it
           myself. Often times I hear of popular technologies and can&apos;t
-          understand the purpose they serve right away (ie <Link>docker</Link>).
-          At that time, the only two languages I knew were PHP and JavaScript,
-          so types were a foreign concept to me. An opportunity came up at work
-          to build a new small React app, so I seized the chance to try out
-          TypeScript and see for myself why it might be useful - I&apos;ve never
-          looked back.
+          understand the purpose they serve right away (ie docker). At that
+          time, the only two languages I knew were PHP and JavaScript, so types
+          were a foreign concept to me. An opportunity came up at work to build
+          a new small React app, so I seized the chance to try out TypeScript
+          and see for myself why it might be useful - I&apos;ve never looked
+          back.
         </Typography>
         <Typography paragraph>
           TypeScript can be polarizing. I have encountered more developers that
@@ -176,7 +176,7 @@ export const skills: Skill[] = [
         <Typography paragraph>
           I discovered Next.JS in search of a good way to do server-side
           rendering, and it delivered so much more. I now use Next.JS on any SPA
-          project that I can (including <Link>this website</Link>!).
+          project that I can (including this website!).
         </Typography>
         <Typography paragraph>
           Website performance is important in any circumstance, but when

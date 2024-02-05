@@ -28,7 +28,7 @@ export const values: Value[] = [
           a product&apos;s development tends to be more contentious. It follows
           reason why it is undervalued: its advantages are taken for granted (
           <i>this is just how things should be</i> - that&apos;s right!), and
-          the cost of its absence is difficult to assign causation from the
+          the cost of its absence is difficult to associate to a cause from the
           outside.
         </Typography>
         <Typography paragraph>
@@ -55,7 +55,7 @@ export const values: Value[] = [
               into some technical hurdles and it&apos;s taking a bit longer than
               we hoped&quot;? The pursuit of quality is the pursuit of
               proportional cost of change - a small change should cost a small
-              amount, a medium change a medium amount, etc.
+              amount, a medium change a medium amount, and so on.
             </Typography>
           </li>
         </ul>
@@ -125,11 +125,11 @@ export const values: Value[] = [
         <Typography paragraph>
           I enjoy learning new technologies. Some of my favorite tools are those
           that I learned through long, research intensive processes sprinkled
-          with failure - specifically <Link>Docker</Link> and{" "}
-          <Link>TypeScript</Link>. These are tools that solved problems I
-          didn&apos;t know I had, but have now profoundly changed the way I
-          work. This type of learning only comes if you are curious enough and
-          motivated enough to seek out &quot;better&quot;.
+          with failure - specifically Docker and TypeScript (read more in{" "}
+          <Link href="/skills">skills</Link>). These are tools that solved
+          problems I didn&apos;t know I had, but have now profoundly changed the
+          way I work. This type of learning only comes if you are curious enough
+          and motivated enough to seek out &quot;better&quot;.
         </Typography>
       </>
     ),
@@ -139,7 +139,7 @@ export const values: Value[] = [
     body: (
       <>
         <Typography paragraph>
-          To explain why I value pragmatism, I need to first explain my view on
+          To explain why I value pragmatism, I need to explain my view on
           Principle. I believe principles are critically important to good
           decision making. I make an effort to seek out good principles to
           adopt; I&apos;ve read books on agile, software architecture, design
@@ -148,7 +148,8 @@ export const values: Value[] = [
         <Typography paragraph>
           A long time ago, from a source I can&apos;t remember, I read
           &quot;when you hold good principles, 90% of your decisions are already
-          made for you&quot;. This roughly holds true in software development.
+          made for you&quot;. I believe this roughly holds true in software
+          development too.
         </Typography>
         <Typography paragraph>
           Because principles potentially hold so much influence, I don&apos;t
@@ -188,7 +189,10 @@ export const values: Value[] = [
           architecture, or principle. I strive to find the sweet spot on the
           wide spectrum between a haphazard &quot;just get it done&quot; type of
           person and a theoritical only, impractical{" "}
-          <Link href="https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/">
+          <Link
+            href="https://www.joelonsoftware.com/2001/04/21/dont-let-architecture-astronauts-scare-you/"
+            target="_blank"
+          >
             architecture astronaut
           </Link>
           .
@@ -217,9 +221,9 @@ export const values: Value[] = [
           I would consider myself a bit of an Agile evanglist, but not
           necessarily an Agile purist. I recently heard of an agile team that
           decided they did not want to point stories - it took too much time and
-          they didn&apos;t see the point. This is pretty shocking to most people
-          that know agile; you could understandably ask the question, &quot;why
-          even do agile then?&quot;
+          it just didn&apos;t seem worth it. This is pretty shocking to most
+          people that know agile; you could understandably ask the question,
+          &quot;why even do agile then?&quot;
         </Typography>
         <Typography paragraph>
           I pondered this, and came to the conclusion - from the outside looking
@@ -227,12 +231,14 @@ export const values: Value[] = [
           Maybe their situation is one with no deadlines and no one really cares
           to see the progress; they just want it to get done and be done well.
           If that&apos;s true, a lot of the value of story pointing is lost, so
-          maybe it is the right call. Would I personally still point things?
-          Yeah, probably. I find that seeing a burndown and closing out points
-          has a positive psychological effect for the team. The <i>point</i>{" "}
-          being, Agile is flexible, and is most effective when you know your
-          situation and the value each component brings to the table (see{" "}
-          <Link>pragmatism</Link>).
+          maybe it is the right call for their team.
+        </Typography>
+        <Typography paragraph>
+          Would I personally still point things? Yeah, probably. I find that
+          seeing a burndown and closing out points has a positive psychological
+          effect for the team. The <i>point</i> being, Agile is flexible, and is
+          most effective when you know your situation and the value each
+          component brings to the table (see pragmatism).
         </Typography>
       </>
     ),
@@ -261,7 +267,8 @@ export const values: Value[] = [
           resistance to asking questions or providing input. We would do
           frequent screen shares and help each other problem solve and discuss
           better ways of doing things. There was no obligation to join, but we{" "}
-          <i>wanted</i> to. It was productive, and frankly, it was a lot of fun.
+          <i>wanted</i> to. It was highly productive, and frankly, it was a lot
+          of fun.
         </Typography>
       </>
     ),

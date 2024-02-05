@@ -11,8 +11,8 @@ import yearsFrom from "@/utils/yearsFrom";
 
 const description = (
   <>
-    On this page I have provided a list of specific technologies I have learned
-    in my career. A simple list of skills and years of experience doesn&apos;t
+    On this page I have provided a list of specific technologies I have used in
+    my career. A simple list of skills and years of experience doesn&apos;t
     actually prove very much; so I have also included expandable sections where
     I describe my experience in a mini-blog post style to show a fuller picture
     of my expertise in each area.
