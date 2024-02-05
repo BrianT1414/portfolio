@@ -57,22 +57,25 @@ export default function Home() {
         <Grid lg={3} md={6}>
           <Card sx={{ textAlign: "left", minHeight: 300, maxWidth: 655 }}>
             <CardHeader
-              title={<Typography variant="h6">Choose your Path</Typography>}
+              title={<Typography variant="h6">Purpose</Typography>}
               avatar={<AltRoute />}
             />
             <CardContent>
+              <Typography paragraph>
+                Find what you need, and nothing more.
+              </Typography>
               <List sx={{ paddingTop: 0 }}>
                 <ListItem>
                   <Typography>
-                    <b>High-level Summary</b> - Quickly browse through my
-                    skills, values, and experience
+                    <b>High-level Summary</b> - Quickly browse through lists of
+                    my skills, values, and experience
                   </Typography>
                 </ListItem>
                 <ListItem>
                   <Typography>
-                    <b>Deep-dive</b> - Get to know me! Spend as much time as you
-                    like reading about each technology I&apos;ve worked with and
-                    value I hold
+                    <b>Deep-dive</b> - Get to know me! Spend as much time as
+                    you&apos;d like reading about each technology I&apos;ve
+                    worked with and qualities I value
                   </Typography>
                 </ListItem>
               </List>

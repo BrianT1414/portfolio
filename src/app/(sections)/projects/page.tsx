@@ -8,6 +8,8 @@ import {
 } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Template from "../template";
+import Link from "next/link";
+import { github_repo_link } from "@/constants";
 
 const description = (
   <>
@@ -38,7 +40,16 @@ export default function Projects() {
         <Card>
           <CardHeader
             title="Portfolio Website"
-            action={<Button endIcon={<GitHubIcon />}>View on GitHub</Button>}
+            action={
+              <Button
+                component="a"
+                href={github_repo_link}
+                target="_blank"
+                endIcon={<GitHubIcon />}
+              >
+                View on GitHub
+              </Button>
+            }
           />
           <CardContent>
             <Typography paragraph>
@@ -46,6 +57,15 @@ export default function Projects() {
               Styling is done with CSS modules and Material UI components. It is
               packaged into a container image using Docker, and deployed in the
               cloud with Digital Ocean.
+            </Typography>
+            <Typography paragraph>
+              The source-code is written very thoughtfully to demonstrate what
+              is important to me as a developer. If you&apos;re interested, I
+              would encourage you to{" "}
+              <Link href={github_repo_link} target="_blank">
+                take a look
+              </Link>
+              !
             </Typography>
             {itemsUsed.map((item) => (
               <Chip key={item} label={item} sx={{ mr: 1, mb: 1 }} />
