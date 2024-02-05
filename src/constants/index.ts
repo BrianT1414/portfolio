@@ -7,4 +7,5 @@ export const navMap = {
   Values: "/values",
   Projects: "/projects",
   "Work History": "/work-history",
+  Resume: "/brian-thompson-resume.pdf",
 };
