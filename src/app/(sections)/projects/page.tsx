@@ -48,7 +48,7 @@ export default function Projects() {
               cloud with Digital Ocean.
             </Typography>
             {itemsUsed.map((item) => (
-              <Chip key={item} label={item} sx={{ mr: 1 }} />
+              <Chip key={item} label={item} sx={{ mr: 1, mb: 1 }} />
             ))}
           </CardContent>
         </Card>

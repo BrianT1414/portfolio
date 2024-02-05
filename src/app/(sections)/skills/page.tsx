@@ -55,7 +55,7 @@ export default function Skills() {
         }}
       >
         {view == "grid" ? (
-          <Grid container spacing={2} rowSpacing={2}>
+          <Grid container spacing={2} justifyContent="center">
             {skills.map((skill) => (
               <Grid key={skill.name} id={skill.name} item>
                 <SkillCard

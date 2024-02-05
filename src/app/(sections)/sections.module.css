@@ -50,4 +50,7 @@
   .mobile_actions {
     display: block;
   }
+  .template_content {
+    margin: 30px 15px;
+  }
 }
