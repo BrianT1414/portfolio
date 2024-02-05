@@ -6,18 +6,22 @@ import {
   Typography,
 } from "@mui/material";
 import Template from "../template";
+import styles from "./history.module.css";
 
 const description = <></>;
 
 export default function WorkHistory() {
   return (
     <Template title="Work History" description={description}>
-      <div style={{ maxWidth: 1000, margin: "auto", marginBottom: 30 }}>
-        <div style={{ marginBottom: 15 }}>
+      <div className={styles.container}>
+        <div className={styles.item}>
           <Card
-            sx={{ display: "flex", justifyContent: "flex-start", padding: 2 }}
+            className={styles.card}
+            sx={{
+              padding: 2,
+            }}
           >
-            <div>
+            <div className={styles.company}>
               <CardMedia
                 component="img"
                 sx={{ width: 151, m: 2 }}
@@ -47,14 +51,7 @@ export default function WorkHistory() {
                 disableTypography
               />
             </div>
-            <CardContent
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                marginLeft: 4,
-              }}
-            >
+            <CardContent className={styles.cardContent}>
               <Typography variant="h6">Client: Best Buy</Typography>
               <ul>
                 <li>
@@ -84,11 +81,14 @@ export default function WorkHistory() {
             </CardContent>
           </Card>
         </div>
-        <div style={{ marginBottom: 15 }}>
+        <div className={styles.item}>
           <Card
-            sx={{ display: "flex", justifyContent: "flex-start", padding: 2 }}
+            className={styles.card}
+            sx={{
+              padding: 2,
+            }}
           >
-            <div>
+            <div className={styles.company}>
               <CardMedia
                 component="img"
                 sx={{ width: 151, m: 2 }}
@@ -118,14 +118,7 @@ export default function WorkHistory() {
                 disableTypography
               />
             </div>
-            <CardContent
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                marginLeft: 4,
-              }}
-            >
+            <CardContent className={styles.cardContent}>
               <ul>
                 <li>
                   <Typography>

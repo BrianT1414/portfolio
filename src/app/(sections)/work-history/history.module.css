@@ -1,0 +1,32 @@
+.container {
+  max-width: 1000px;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.item {
+  margin-bottom: 15px;
+}
+
+.company {
+  margin-right: 30px;
+}
+
+.card {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 1080px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
