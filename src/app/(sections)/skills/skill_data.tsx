@@ -86,15 +86,16 @@ export const skills: Skill[] = [
     body: (
       <>
         <Typography paragraph>
-          The proportion of plain JavaScript to React JavaScript is probably
-          1/100, but as I&apos;ve taken a deep dive into React I have become
-          very knowledgeable in the language beneath the tool.
+          Out of all of the JavaScript I&apos;ve written over the years,
+          probably only 1% has been outside of React, but as I&apos;ve taken a
+          deep dive into React I have become very knowledgeable in the language
+          beneath the tool.
         </Typography>
         <Typography paragraph>
           Some particular JavaScript areas that I have learned through React are
           the <Code>this</Code> keyword (less useful now that hooks have taken
-          over), array methods, equality operations, and object mutation. I
-          began developing with JavaScript pre-ES6, so I also have a good
+          over), array methods, equality operation nuances, and object mutation.
+          I began developing with JavaScript pre-ES6, so I also have a good
           knowledge of newer features, the pain-points they alleviate, and
           transpilation for browser compatibilty.
         </Typography>
@@ -157,10 +158,10 @@ export const skills: Skill[] = [
           <li>
             <Typography>
               <b>Documentation as code</b> - over half of my trips to
-              documentation websites (and the need to document my own code) are
-              deleted. Type definitions paired with DocBlocks provide most if
-              not all of the information developers need to use code - and best
-              of all, they&apos;re guaranteed to be up-to-date.
+              documentation websites are deleted. Type definitions paired with
+              DocBlocks provide most if not all of the information developers
+              need to use the code - and best of all, they&apos;re guaranteed to
+              be up-to-date.
             </Typography>
           </li>
         </ul>
@@ -208,21 +209,22 @@ export const skills: Skill[] = [
     body: (
       <>
         <Typography paragraph>
-          Laravel is a full-stack web development framework for PHP. It is
-          remarkably similar to Ruby on Rails. Laravel includes support for the
-          most common pieces of web applications: models (Eloquent ORM), views
-          (Blade templates), and controllers (routing, requests and responses).
-          In addition to those basics it also provides support for database
-          migrations, authentication and authorization, feature testing, queuing
-          jobs, sending email, and writing CLI commands.
+          Laravel is a full-stack web development framework for PHP. It has lots
+          of similarities to Ruby on Rails, another popular web development
+          framework. Laravel includes support for the most common pieces of web
+          applications: models (Eloquent ORM), views (Blade templates), and
+          controllers (routing, requests and responses). In addition to those
+          basics it also provides support for database migrations,
+          authentication and authorization, feature testing, queuing jobs,
+          sending email, and writing CLI commands.
         </Typography>
         <Typography paragraph>
           Typically, I have used Laravel as an API only solution - opting to
           only use Blade templates for email views. I have worked on Laravel
           projects ranging in size from 3 endpoints (for a central company
           authorization service) to hundreds of endpoints. I have used every
-          feature of the framework including some of the less popular ones like
-          commands (usually ran by the scheduler), model observers, and events.
+          feature of the framework including some of the less frequently used
+          ones like commands, scheduler, model observers, and events.
         </Typography>
         <Typography paragraph>
           Laravel is a joy to work with. As I&apos;ve recently moved on
@@ -322,11 +324,11 @@ export const skills: Skill[] = [
               on-prem servers to host our websites. We had just completed a
               painfully slow server migration (over a year to get everything
               moved over). Why? Because all of our applications were coupled to
-              the server, and the servers were different. Looking back (I was
-              not not in a decision-making role at the time), this could have
-              been improved without docker, but with docker it would have been a
-              breeze. Applications that are not coupled to the server they run
-              are easily ran on-prem, in the cloud, or both.
+              the server, and the servers were different. Applications that are
+              not coupled to the server they run on are easily ran on-prem, in
+              the cloud, or both. Moving an application to a new server is now
+              only a networking concern, the application doesn&apos;t care
+              anymore.
             </Typography>
           </li>
           <li>
@@ -345,22 +347,21 @@ export const skills: Skill[] = [
               <b>Dev/Prod parity</b> - When you can define your server
               dependencies within the application&apos;s codebase, you can often
               trivially use the same configuration to manage the development
-              environment. Even if, for example, the same exact Dockerfile is
-              not reused, you can quickly check dependencies of the development
-              environment against production.
+              environment. Even if the same exact Dockerfile is not reused, you
+              can quickly check dependencies of the development environment
+              against production.
             </Typography>
           </li>
           <li>
             <Typography>
               <b>Instant development environments</b> - getting new developers
               setup to start working is always a pain-point. I&apos;ve seen it
-              across multiple teams, I&apos;ve experienced it myself, and
-              I&apos;ve heard plenty more examples of developers needing days or
-              even over a week to get their environment setup correctly so that
-              they can start working. This is frustrating to developers, and
-              expensive to companies. I have solved this problem in two ways -
-              both resulting in developer enviroment setup times of a few
-              minutes.
+              across multiple teams and I&apos;ve heard plenty more examples of
+              developers needing days or even over a week to get their
+              environment setup correctly so that they can start working. This
+              is frustrating to developers, and expensive to companies. I have
+              solved this problem in two ways - both resulting in developer
+              enviroment setup times of a few minutes.
             </Typography>
             <ol>
               <li>
@@ -413,7 +414,7 @@ export const skills: Skill[] = [
           this process invaluable.
         </Typography>
         <Typography paragraph>
-          Second iterations included adding eslint checks and testing webpack
+          Next iterations included adding eslint checks and testing webpack
           builds for React apps, and running tests against our Laravel code on
           every commit. This removed the dreaded question, &quot;was this
           working when you had it last?&quot; or &quot;was this test failing for
@@ -485,10 +486,10 @@ export const skills: Skill[] = [
         </Typography>
         <Typography paragraph>
           <b>Is Redux still Relevant?</b> - The popularity of Redux has suffered
-          some severe whiplash since its release. Redux used to be nearly
-          synonymous with React; they were almost always used together. Its
-          popularity was certainly influnced by Dan Abromov (creator of Redux
-          and React maintainer) and blog posts about patterns and best practices
+          some severe whiplash since its release. Redux used to be ubiquitous
+          with React; they were almost always used together. Its popularity was
+          certainly influnced by Dan Abromov (creator of Redux and React
+          maintainer) and blog posts about patterns and best practices
           (including Ducks, and Container/Presenter). Abromov himself recognized
           that Redux&apos;s popularity had swung too far to the extreme, where
           people were using it even when it didn&apos;t really suit them (
@@ -610,15 +611,17 @@ export const skills: Skill[] = [
           could consider developing from &quot;Create React App&quot; (CRA)
           using Node, since it goes one step further and runs a Node server to
           handle hot module replacement (HMR). However, neither of these
-          scenarios really prove much knowledge of working with Node.
+          scenarios really prove much knowledge of working with Node and
+          certainly aren&apos;t developing for Node.
         </Typography>
         <Typography paragraph>
           Situations that I personally consider to be &quot;working with
           Node&quot; include server-side rendering, using the API functionality
-          from Next.JS, or using something like Express.js. I have a moderate
-          level of experience in these areas, but I also don&apos;t believe that
-          developing in Node is all that different from developing for the
-          browser. There are usually different purposes and patterns - handling
+          from Next.JS, Nest.JS, or using something like Express.JS. I have a
+          moderate level of experience in these areas, but I also don&apos;t
+          believe that developing in Node is all that different from developing
+          for the browser. You have a slightly different toolset on the server,
+          and there are usually different purposes and patterns - handling
           requests, connecting to a database, etc, but ultimately it is still
           JavaScript (or preferably TypeScript).
         </Typography>
@@ -640,11 +643,11 @@ export const skills: Skill[] = [
           abstracted away (JSX, SCSS, SASS, JSS, etc).
         </Typography>
         <Typography paragraph>
-          I recently spent some time learning CSS flex-box which has
+          I recently spent some time learning CSS flexbox which has
           significantly increased my ability to create layouts manually. Instead
-          of positioning things with margin, bootstrap grids, or MUI Grids, I am
-          now comfortable creating CSS layouts from scratch if needed (this
-          website uses CSS modules, and flex-box extensively).
+          of only knowing how to position things with margin, bootstrap grids,
+          or MUI Grids, I am now comfortable creating CSS layouts from scratch
+          if needed (this website uses CSS modules and flex-box extensively).
         </Typography>
       </>
     ),
@@ -662,8 +665,8 @@ export const skills: Skill[] = [
           mainstream than Laravel for backend development.
         </Typography>
         <Typography paragraph>
-          I have taken pluralsite courses on Maven, Spring, Spring MVC, and have
-          worked professionaly on one Java/Spring project.
+          I have taken Pluralsight courses on Maven, Spring, Spring MVC, and
+          have worked professionaly on one Java/Spring project.
         </Typography>
         <Typography paragraph>
           The concepts are simple enough, often shared across other languages
